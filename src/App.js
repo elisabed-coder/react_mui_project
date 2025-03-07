@@ -1,20 +1,22 @@
-import { Button, styled } from "@mui/material";
-import "./App.css";
-import PsychologyIcon from "@mui/icons-material/Psychology";
+import { Box, Stack } from "@mui/material";
+import Sidebar from "./Components/Sidebar";
+import Rightbar from "./Components/Rightbar";
+import Feed from "./Components/Feed";
+
 function App() {
-  const BlueButton = styled(Button)({
-    backgroundColor: "skyblue",
-    p: 1,
-    m: 2,
-    "&:hover": { backgroundColor: "LightBlue" },
-  });
   return (
-    <div className="App">
-      <BlueButton
-        variant="contained"
-        startIcon={<PsychologyIcon />}
-      ></BlueButton>
-    </div>
+    <Box>
+      <Stack
+        direction="row
+      "
+        spacing={2}
+        justifyContent="center-between"
+      >
+        <Sidebar />
+        <Feed />
+        <Rightbar />
+      </Stack>
+    </Box>
   );
 }
 
