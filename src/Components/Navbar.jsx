@@ -14,6 +14,7 @@ import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
 const StyledToolBar = styled(Toolbar)({
   display: "flex",
   justifyContent: "space-between",
+  width: "fit-content",
 });
 
 const Navbar = () => {
@@ -30,7 +31,7 @@ const Navbar = () => {
               variant="h6"
               noWrap
               component="div"
-              sx={{ display: { xs: "none", sm: "block" } }} // Hides on extra-small screens
+              sx={{ display: { xs: "none", sm: "block" } }}
             >
               PRESS PLAY
             </Typography>
@@ -38,10 +39,7 @@ const Navbar = () => {
 
           {/* Right side: Buttons */}
           <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-            <Button
-              size="medium"
-              sx={{ display: { xs: "none", sm: "block" } }} // Hide on extra-small screens
-            >
+            <Button size="medium" sx={{ display: { xs: "none", sm: "block" } }}>
               LIVE
             </Button>
             <Button

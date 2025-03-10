@@ -1,5 +1,5 @@
 import { Typography } from "@mui/material";
-import { styled } from "@mui/material/styles"; // Import styled
+import { styled } from "@mui/material/styles"; 
 import React from "react";
 
 const Movingbox = styled("div")(({ theme }) => ({
